@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net5.0-windows</TargetFramework>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Dapper" Version="2.0.123" />
+      <PackageReference Include="Syncfusion.Licensing" Version="19.3.0.55" />
+      <PackageReference Include="Syncfusion.Pdf.WinForms" Version="19.3.0.55" />
+      <PackageReference Include="Syncfusion.PdfViewer.Windows" Version="19.3.0.55" />
+      <PackageReference Include="Syncfusion.Shared.Base" Version="19.3.0.55" />
+      <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="SimpleSmush.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="CoverGenerator.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+</Project>
